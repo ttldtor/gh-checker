@@ -1,6 +1,9 @@
 [
   {
-    "repo":"https://github.com/fffaraz/awesome-cpp",
+    "type":"github",
+    "user":"fffaraz",
+    "repo":"awesome-cpp",
+    "branch":"master",
     "files":[
       {
         "path":"README.md",
