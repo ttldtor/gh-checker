@@ -23,3 +23,13 @@ jobs:
         run: |
           echo Test1
           echo Test2
+
+      - name: Check
+        run: |
+          echo ${{ github.workspace }}
+          echo ${{ GITHUB_WORKSPACE }}
+      
+      - name: Run the processor
+        run: |
+          chmod +x ${{ github.workspace }}/.github/process.sh
+          ${{ github.workspace }}/.github/process.sh ${{ github.workspace }}/config.json
